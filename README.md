@@ -1,0 +1,2 @@
+# docker-hugobuild
+build hugo
