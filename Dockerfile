@@ -6,3 +6,6 @@ RUN buildDeps='pip install Pygments' \
     && dpkg -i hugo.deb \
     && hugo version  \
     && rm ./hugo.deb
+
+# select user
+USER node
