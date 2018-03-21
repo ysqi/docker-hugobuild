@@ -7,5 +7,11 @@ RUN buildDeps='pip install Pygments' \
     && hugo version  \
     && rm ./hugo.deb
 
+# npm update check failed           
+#  Try running with sudo or get access    
+#  to the local update config store via     
+RUN mkdir -p /.config
+RUN chown -R node:$(id -gn node) /.config
+
 # select user
 USER node
